@@ -1,0 +1,534 @@
+{
+  "cases": [
+    {
+      "name": "plain",
+      "day": {
+        "date": "2026-10-18",
+        "breakfast": {
+          "text": "[ A ]\nごはん\n[ B ]\nパン",
+          "rawText": "[ A ]\nごはん\n[ B ]\nパン",
+          "warnings": []
+        },
+        "lunch": {
+          "text": "カレーライス",
+          "rawText": "カレーライス",
+          "warnings": []
+        },
+        "dinner": {
+          "text": "",
+          "rawText": "",
+          "warnings": []
+        }
+      },
+      "date": "2026-10-18",
+      "responses": {
+        "today": {
+          "ephemeral": false,
+          "content": "今日の献立です．",
+          "embeds": [
+            {
+              "title": "日付",
+              "description": "2026-10-18",
+              "color": 874652,
+              "author": {
+                "name": "寮食情報（本日）",
+                "url": "https://www.kagawa-nct.ac.jp/dormitoryE/kondate.pdf"
+              },
+              "fields": [
+                {
+                  "name": "朝食",
+                  "value": "[ A ]\nごはん\n[ B ]\nパン",
+                  "inline": true
+                },
+                {
+                  "name": "昼食",
+                  "value": "カレーライス",
+                  "inline": true
+                },
+                {
+                  "name": "夕食",
+                  "value": "読み取り結果なし（未提供・認識失敗の可能性）",
+                  "inline": true
+                }
+              ],
+              "footer": {
+                "text": "香川高専 寮食検索サービス",
+                "icon_url": "https://raw.githubusercontent.com/virtual-ict-lab/knct-ryoshoku-bot/refs/heads/main/assets/ryoshoku.png"
+              }
+            }
+          ]
+        },
+        "tomorrow": {
+          "ephemeral": true,
+          "content": "明日の献立です．",
+          "embeds": [
+            {
+              "title": "日付",
+              "description": "2026-10-18",
+              "color": 11194211,
+              "author": {
+                "name": "寮食情報（明日）",
+                "url": "https://www.kagawa-nct.ac.jp/dormitoryE/kondate.pdf"
+              },
+              "fields": [
+                {
+                  "name": "朝食",
+                  "value": "[ A ]\nごはん\n[ B ]\nパン",
+                  "inline": true
+                },
+                {
+                  "name": "昼食",
+                  "value": "カレーライス",
+                  "inline": true
+                },
+                {
+                  "name": "夕食",
+                  "value": "読み取り結果なし（未提供・認識失敗の可能性）",
+                  "inline": true
+                }
+              ],
+              "footer": {
+                "text": "香川高専 寮食検索サービス",
+                "icon_url": "https://raw.githubusercontent.com/virtual-ict-lab/knct-ryoshoku-bot/refs/heads/main/assets/ryoshoku.png"
+              }
+            }
+          ]
+        },
+        "search": {
+          "ephemeral": true,
+          "embeds": [
+            {
+              "title": "日付",
+              "description": "2026-10-18",
+              "color": 13842460,
+              "author": {
+                "name": "献立情報（日曜日）",
+                "url": "https://www.kagawa-nct.ac.jp/dormitoryE/kondate.pdf"
+              },
+              "fields": [
+                {
+                  "name": "朝食",
+                  "value": "[ A ]\nごはん\n[ B ]\nパン",
+                  "inline": true
+                },
+                {
+                  "name": "昼食",
+                  "value": "カレーライス",
+                  "inline": true
+                },
+                {
+                  "name": "夕食",
+                  "value": "読み取り結果なし（未提供・認識失敗の可能性）",
+                  "inline": true
+                }
+              ],
+              "footer": {
+                "text": "香川高専 寮食検索サービス",
+                "icon_url": "https://raw.githubusercontent.com/virtual-ict-lab/knct-ryoshoku-bot/refs/heads/main/assets/ryoshoku.png"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "warnings",
+      "day": {
+        "date": "2026-10-18",
+        "breakfast": {
+          "text": "[ A ]\nごはん\n[ B ]\nパン",
+          "rawText": "[ A ]\nごはん\n[ B ]\nパン",
+          "warnings": []
+        },
+        "lunch": {
+          "text": "野菜サラダ",
+          "rawText": "野菜サラダ",
+          "warnings": [
+            "OCR要確認 (0.72): 野菜ｻﾗﾀﾞ",
+            "低信頼度のため表示省略 (0.12): 8"
+          ]
+        },
+        "dinner": {
+          "text": "",
+          "rawText": "",
+          "warnings": [
+            "読み取り結果が空です（未提供または認識できなかった可能性があります）"
+          ]
+        }
+      },
+      "date": "2026-10-18",
+      "responses": {
+        "today": {
+          "ephemeral": false,
+          "content": "今日の献立です．\n⚠️ の箇所は読み取り結果の確認が必要です",
+          "embeds": [
+            {
+              "title": "日付",
+              "description": "2026-10-18",
+              "color": 874652,
+              "author": {
+                "name": "寮食情報（本日）",
+                "url": "https://www.kagawa-nct.ac.jp/dormitoryE/kondate.pdf"
+              },
+              "fields": [
+                {
+                  "name": "朝食",
+                  "value": "[ A ]\nごはん\n[ B ]\nパン",
+                  "inline": true
+                },
+                {
+                  "name": "昼食",
+                  "value": "⚠️ 野菜サラダ\n\n⚠️ 認識が不確かな1行を省略",
+                  "inline": true
+                },
+                {
+                  "name": "夕食",
+                  "value": "⚠️ 読み取り結果なし（未提供・認識失敗の可能性）",
+                  "inline": true
+                }
+              ],
+              "footer": {
+                "text": "香川高専 寮食検索サービス",
+                "icon_url": "https://raw.githubusercontent.com/virtual-ict-lab/knct-ryoshoku-bot/refs/heads/main/assets/ryoshoku.png"
+              }
+            }
+          ]
+        },
+        "tomorrow": {
+          "ephemeral": true,
+          "content": "明日の献立です．\n⚠️ の箇所は読み取り結果の確認が必要です",
+          "embeds": [
+            {
+              "title": "日付",
+              "description": "2026-10-18",
+              "color": 11194211,
+              "author": {
+                "name": "寮食情報（明日）",
+                "url": "https://www.kagawa-nct.ac.jp/dormitoryE/kondate.pdf"
+              },
+              "fields": [
+                {
+                  "name": "朝食",
+                  "value": "[ A ]\nごはん\n[ B ]\nパン",
+                  "inline": true
+                },
+                {
+                  "name": "昼食",
+                  "value": "⚠️ 野菜サラダ\n\n⚠️ 認識が不確かな1行を省略",
+                  "inline": true
+                },
+                {
+                  "name": "夕食",
+                  "value": "⚠️ 読み取り結果なし（未提供・認識失敗の可能性）",
+                  "inline": true
+                }
+              ],
+              "footer": {
+                "text": "香川高専 寮食検索サービス",
+                "icon_url": "https://raw.githubusercontent.com/virtual-ict-lab/knct-ryoshoku-bot/refs/heads/main/assets/ryoshoku.png"
+              }
+            }
+          ]
+        },
+        "search": {
+          "ephemeral": true,
+          "content": "⚠️ の箇所は読み取り結果の確認が必要です",
+          "embeds": [
+            {
+              "title": "日付",
+              "description": "2026-10-18",
+              "color": 13842460,
+              "author": {
+                "name": "献立情報（日曜日）",
+                "url": "https://www.kagawa-nct.ac.jp/dormitoryE/kondate.pdf"
+              },
+              "fields": [
+                {
+                  "name": "朝食",
+                  "value": "[ A ]\nごはん\n[ B ]\nパン",
+                  "inline": true
+                },
+                {
+                  "name": "昼食",
+                  "value": "⚠️ 野菜サラダ\n\n⚠️ 認識が不確かな1行を省略",
+                  "inline": true
+                },
+                {
+                  "name": "夕食",
+                  "value": "⚠️ 読み取り結果なし（未提供・認識失敗の可能性）",
+                  "inline": true
+                }
+              ],
+              "footer": {
+                "text": "香川高専 寮食検索サービス",
+                "icon_url": "https://raw.githubusercontent.com/virtual-ict-lab/knct-ryoshoku-bot/refs/heads/main/assets/ryoshoku.png"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "long",
+      "day": {
+        "date": "2026-10-18",
+        "breakfast": {
+          "text": "[ A ]\nごはん\n[ B ]\nパン",
+          "rawText": "[ A ]\nごはん\n[ B ]\nパン",
+          "warnings": []
+        },
+        "lunch": {
+          "text": "長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n",
+          "rawText": "長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n",
+          "warnings": ["低信頼度のため表示省略 (0.12): 8"]
+        },
+        "dinner": {
+          "text": "",
+          "rawText": "",
+          "warnings": []
+        }
+      },
+      "date": "2026-10-18",
+      "responses": {
+        "today": {
+          "ephemeral": false,
+          "content": "今日の献立です．\n⚠️ の箇所は読み取り結果の確認が必要です",
+          "embeds": [
+            {
+              "title": "日付",
+              "description": "2026-10-18",
+              "color": 874652,
+              "author": {
+                "name": "寮食情報（本日）",
+                "url": "https://www.kagawa-nct.ac.jp/dormitoryE/kondate.pdf"
+              },
+              "fields": [
+                {
+                  "name": "朝食",
+                  "value": "[ A ]\nごはん\n[ B ]\nパン",
+                  "inline": true
+                },
+                {
+                  "name": "昼食",
+                  "value": "長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n…続きは原PDFを確認してください\n\n⚠️ 認識が不確かな1行を省略",
+                  "inline": true
+                },
+                {
+                  "name": "夕食",
+                  "value": "読み取り結果なし（未提供・認識失敗の可能性）",
+                  "inline": true
+                }
+              ],
+              "footer": {
+                "text": "香川高専 寮食検索サービス",
+                "icon_url": "https://raw.githubusercontent.com/virtual-ict-lab/knct-ryoshoku-bot/refs/heads/main/assets/ryoshoku.png"
+              }
+            }
+          ]
+        },
+        "tomorrow": {
+          "ephemeral": true,
+          "content": "明日の献立です．\n⚠️ の箇所は読み取り結果の確認が必要です",
+          "embeds": [
+            {
+              "title": "日付",
+              "description": "2026-10-18",
+              "color": 11194211,
+              "author": {
+                "name": "寮食情報（明日）",
+                "url": "https://www.kagawa-nct.ac.jp/dormitoryE/kondate.pdf"
+              },
+              "fields": [
+                {
+                  "name": "朝食",
+                  "value": "[ A ]\nごはん\n[ B ]\nパン",
+                  "inline": true
+                },
+                {
+                  "name": "昼食",
+                  "value": "長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n…続きは原PDFを確認してください\n\n⚠️ 認識が不確かな1行を省略",
+                  "inline": true
+                },
+                {
+                  "name": "夕食",
+                  "value": "読み取り結果なし（未提供・認識失敗の可能性）",
+                  "inline": true
+                }
+              ],
+              "footer": {
+                "text": "香川高専 寮食検索サービス",
+                "icon_url": "https://raw.githubusercontent.com/virtual-ict-lab/knct-ryoshoku-bot/refs/heads/main/assets/ryoshoku.png"
+              }
+            }
+          ]
+        },
+        "search": {
+          "ephemeral": true,
+          "content": "⚠️ の箇所は読み取り結果の確認が必要です",
+          "embeds": [
+            {
+              "title": "日付",
+              "description": "2026-10-18",
+              "color": 13842460,
+              "author": {
+                "name": "献立情報（日曜日）",
+                "url": "https://www.kagawa-nct.ac.jp/dormitoryE/kondate.pdf"
+              },
+              "fields": [
+                {
+                  "name": "朝食",
+                  "value": "[ A ]\nごはん\n[ B ]\nパン",
+                  "inline": true
+                },
+                {
+                  "name": "昼食",
+                  "value": "長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n長い献立\n…続きは原PDFを確認してください\n\n⚠️ 認識が不確かな1行を省略",
+                  "inline": true
+                },
+                {
+                  "name": "夕食",
+                  "value": "読み取り結果なし（未提供・認識失敗の可能性）",
+                  "inline": true
+                }
+              ],
+              "footer": {
+                "text": "香川高専 寮食検索サービス",
+                "icon_url": "https://raw.githubusercontent.com/virtual-ict-lab/knct-ryoshoku-bot/refs/heads/main/assets/ryoshoku.png"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "missing",
+      "day": null,
+      "date": "2026-10-18",
+      "responses": {
+        "today": {
+          "ephemeral": false,
+          "content": "2026-10-18 の献立はまだ取得できていません。"
+        },
+        "tomorrow": {
+          "ephemeral": true,
+          "content": "2026-10-18 の献立はまだ取得できていません。"
+        },
+        "search": {
+          "ephemeral": true,
+          "content": "2026-10-18 の献立はまだ取得できていません。"
+        }
+      }
+    }
+  ],
+  "commands": [
+    {
+      "options": [],
+      "name": "today",
+      "description": "今日の献立を表示します",
+      "type": 1
+    },
+    {
+      "options": [],
+      "name": "tomorrow",
+      "description": "明日の献立を表示します",
+      "type": 1
+    },
+    {
+      "options": [
+        {
+          "type": 3,
+          "choices": [
+            {
+              "name": "月曜日",
+              "value": "0"
+            },
+            {
+              "name": "火曜日",
+              "value": "1"
+            },
+            {
+              "name": "水曜日",
+              "value": "2"
+            },
+            {
+              "name": "木曜日",
+              "value": "3"
+            },
+            {
+              "name": "金曜日",
+              "value": "4"
+            },
+            {
+              "name": "土曜日",
+              "value": "5"
+            },
+            {
+              "name": "日曜日",
+              "value": "6"
+            }
+          ],
+          "name": "weekday",
+          "description": "曜日",
+          "required": true
+        }
+      ],
+      "name": "search",
+      "description": "今週の献立を曜日で検索します",
+      "type": 1
+    },
+    {
+      "options": [],
+      "name": "help",
+      "description": "Botの使い方を表示します",
+      "type": 1
+    },
+    {
+      "options": [],
+      "name": "privacy",
+      "description": "保存する情報について表示します",
+      "type": 1
+    },
+    {
+      "options": [],
+      "name": "vj",
+      "description": "管理者: 保存済み献立JSONを表示します",
+      "default_member_permissions": null,
+      "type": 1
+    }
+  ],
+  "help": {
+    "title": "寮食検索サービスの使い方",
+    "description": "以下のコマンドを使用して，寮食情報を取得できます．",
+    "color": 15844367,
+    "fields": [
+      {
+        "name": "/today",
+        "value": "今日の献立を表示します．",
+        "inline": false
+      },
+      {
+        "name": "/tomorrow",
+        "value": "明日の献立を表示します．",
+        "inline": false
+      },
+      {
+        "name": "/search <曜日>",
+        "value": "今週の献立を曜日で検索します．曜日は選択肢から選んでください．",
+        "inline": false
+      }
+    ],
+    "footer": {
+      "text": "香川高専 寮食検索サービス",
+      "icon_url": "https://raw.githubusercontent.com/virtual-ict-lab/knct-ryoshoku-bot/refs/heads/main/assets/ryoshoku.png"
+    }
+  },
+  "privacy": {
+    "title": "プライバシーポリシー",
+    "description": "公開された献立JSON・取得日時を稼働サーバーに保存します",
+    "color": 3066993,
+    "footer": {
+      "text": "香川高専 寮食検索サービス",
+      "icon_url": "https://raw.githubusercontent.com/virtual-ict-lab/knct-ryoshoku-bot/refs/heads/main/assets/ryoshoku.png"
+    }
+  }
+}

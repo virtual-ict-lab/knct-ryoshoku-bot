@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+.idea/
+data/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+.superpowers/
+docs/superpowers/

@@ -1,0 +1,26 @@
+{
+  "name": "knct-ryoshoku-bot",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "devDependencies": {
+    "@types/bun": "^1.4.3",
+    "@types/proper-lockfile": "^4.1.4",
+    "typescript": "7.0.2"
+  },
+  "dependencies": {
+    "discord.js": "14.27.0",
+    "proper-lockfile": "4.1.2",
+    "zod": "4.6.7"
+  },
+  "scripts": {
+    "setup": "bun run scripts/setup.ts",
+    "clean": "bun run scripts/clean.ts",
+    "start": "NODE_ENV=production bun run src/cli.ts start",
+    "test": "bun test ./tests",
+    "typecheck": "bun check",
+    "test:integration": "bun test ./integration",
+    "check:spdx": "bun run scripts/check-spdx.ts"
+  }
+}
